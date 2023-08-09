@@ -5,7 +5,7 @@ import com.globant.web.pages.HomePage;
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-
+import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class BaseTest {
 
-    Driver driver;
+    private Driver driver;
     private HomePage home;
 
     @BeforeTest(alwaysRun = true)

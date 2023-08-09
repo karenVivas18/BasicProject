@@ -1,6 +1,7 @@
 package com.globant.web.pages;
 
 import com.globant.web.pages.base.BasePage;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,9 +22,12 @@ public class HomePage extends BasePage {
     }
 
 
-    public HomePage switchToAlert(int index) {
-        getDriver().switchTo().alert();
+    public HomePage switchToAlert() {
+        driver.switchTo().alert();
         return this;
+    }
+    public HomePage aceptAlert() {
+        return aceptAlert();
     }
 
     private WebDriver getDriver() {

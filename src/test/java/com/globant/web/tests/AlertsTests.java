@@ -15,12 +15,11 @@ public class AlertsTests extends BaseTest {
     public void AlertTest() {
 
         // HOME PAGE
-
         HomePage homePage = getHomePage();
         homePage.clickGo();
-
-        homePage.switchToAlert(0);
+        homePage.switchToAlert();
         waitSomeSeconds(6);
+        homePage.aceptAlert();
         homePage.clickGo();
     }
 
